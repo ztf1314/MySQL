@@ -52,6 +52,7 @@
         +--------+----------+
         1 row in set (0.00 sec)
 
+    --group_concat(...) 显示的内容
     select gender, group_concat(name, age, id), count(*) from studuent where gender = 1 group by gender;
         +--------+---------------------------------+----------+
         | gender | group_concat(name, age, id)     | count(*) |
@@ -67,3 +68,7 @@
         | 男     | 小黄_17 2,十一_15 16,十二_18 17       |        3 |
         +--------+---------------------------------------+----------+
         1 row in set (0.00 sec)
+
+    --hanving  where是对表的数据进行判断   having表示对组进行判断，是进行分组之后在判断
+    --查询平均年年龄超过18岁的性别以及姓名  hanving avg(age)>18 
+        select gender, group_concat(name), avg(age) from studuent group by gender having avg(age) > 18;
