@@ -10,3 +10,4 @@
 
     --order by 多个字段
     select * from studuent where (age between 12 and 23) and gender = 1 order by age desc, gender esc, height desc; --在年龄相同的情况下按照性别按照升序的方式排序
+    
