@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MySQL.iml" filepath="$PROJECT_DIR$/.idea/MySQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librosa_tutorial-master/.idea/librosa_tutorial-master.iml" filepath="$PROJECT_DIR$/librosa_tutorial-master/.idea/librosa_tutorial-master.iml" />
     </modules>
   </component>
 </project>
