@@ -16,6 +16,8 @@
 
 # 数据表中插入数据
     insert into python_test values (0, "老王", 23, 187, "男", 2);
+    insert into python_test values (default, "老王", 23, 187, "男", 2);
+    insert into python_test values (null, "老王", 23, 187, "男", 2);
 
 # 修改表结构
     # 添加字段
