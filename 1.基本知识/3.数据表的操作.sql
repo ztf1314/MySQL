@@ -1,6 +1,9 @@
 # 查看数据表
     show tables ;
 
+# 查询一张表所有的字段名称
+    select COLUMN_NAME, column_comment from INFORMATION_SCHEMA.Columns where table_name='你的表名';
+
 # 创建数据表
     create table table_test(
         id int unsigned unique primary key not null auto_increment,
