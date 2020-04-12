@@ -1,6 +1,9 @@
 # 查看数据表
     show tables ;
 
+# 查询一张表所有的字段名称
+    select COLUMN_NAME, column_comment from INFORMATION_SCHEMA.Columns where table_name='你的表名';
+
 # 创建数据表
     create table table_test(
         id int unsigned unique primary key not null auto_increment,
@@ -16,6 +19,8 @@
 
 # 数据表中插入数据
     insert into python_test values (0, "老王", 23, 187, "男", 2);
+    insert into python_test values (default, "老王", 23, 187, "男", 2);
+    insert into python_test values (null, "老王", 23, 187, "男", 2);
 
 # 修改表结构
     # 添加字段
