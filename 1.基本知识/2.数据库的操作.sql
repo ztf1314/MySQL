@@ -3,6 +3,9 @@
 
 # 退出数据库
     # exit/quit/ctrl+d
+    
+# 查看现有数据库
+    show databases
 
 # 显示时间
     select now();
